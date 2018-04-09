@@ -2,7 +2,6 @@ html {
 	background-color: #999999;
 }
 
-
 body {
 	background-color: #FFFFFF;
 	width: 80%;
@@ -12,7 +11,7 @@ body {
 }
 
 .navBar {
-	background-color: lightblue;
+	background-color: teal;
 	color: #FFFFFF;
 	padding: 0px 0px 0px 0px;
 	width: 100%;
@@ -30,7 +29,7 @@ body {
 }
 
 .navBar a:hover {
-	background-color: blue;
+	background-color: #2F4F4F;
 	color: #FFFFFF;
 }
 
@@ -42,13 +41,38 @@ body {
 	padding: 0px 5px 10px 5px;
 }
 
+.mainContent h2 {
+	text-align: center;
+}
+
+.mainContent .project {
+	align: center;
+}
+
 .project {
-	width: 95%;
-	margin-left: auto;
-	margin-right: auto;
+	display: inline-block;
+	width: 45%;
+	margin-left: 3%;
+	margin-right: 3;
 	margin-top: 1%;
 	margin-bottom: 1%;
-	background-color: #F8F8F8;
+	background-color: #F5F5F5;
+	text-align: center;
+	box-shadow: 5px 5px 5px grey;
+	
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+.mainContent .project:hover {
+	box-shadow: 6px 6px 2px grey;
+	background-color: #DCDCDC;
+}
+
+#plants {
+	width: 100%;
 }
 
 
