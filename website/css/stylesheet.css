@@ -1,0 +1,155 @@
+html {
+	height: 100%;
+	font-family: courier;
+	background: #c33764; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #c33764, #1d2671); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #c33764, #1d2671); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body {
+	height: 5000px;
+	width: 100%;
+	margin: 0 0;
+}
+
+#blink {
+	animation: blinker 1s linear infinite;
+	color: cyan;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+	position: sticky;
+	margin: 0 auto;
+	top: 0%;
+	
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+	
+	animation-duration: 0.5s;	
+	-webkit-animation-duration: 0.5s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(-100%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+
+#content {
+	background-color: white;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#name_box {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 0;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+
+  	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+#name {
+	font-family: courier;
+	font-size: 4vw;
+	color: white;
+	text-align: center;
+	border: 3px solid white;
+	padding: 1vw 1vw;
+	background:rgba(0,0,0,0.5);
+	display: inline-block;
+	margin: 1vh auto;
+}
+
+#nav_bar {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template: 1fr / repeat(5, 1fr);
+}
+
+.nav {
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 1vh 0;
+	
+	transition: background-color 0.3s linear;
+	-webkit-transition: background-color 0.3s linear;
+}
+
+#nav_bar a:hover {
+	background:rgba(0,0,0,0.8) !important;
+}
+
+#logo {
+	display: none;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 1vh 0;
+	
+	background:rgba(0,0,0,0.6);
+	
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+#intro_section {
+	height: 1000px;
+	background-color: red;
+}
+
+#education_section {
+	height: 1000px;
+	background-color: yellow;
+}
+
+#work_experience_section {
+	height: 1000px;
+	background-color: pink;
+}
+
+#contact_section {
+	height: 1000px;
+	background-color: green;
+}
+
+#etc_section {
+	height: 1000px;
+	background-color: purple;
+}
